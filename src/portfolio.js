@@ -1,8 +1,10 @@
 import aboutpic from './components/Access/adriano.jpg'
+import img1 from './assets/img/1.png'
+import img2 from './assets/img/2.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://morganbb104.github.io/HW_20_Portfolio_withReact/',
+  homepage: 'https://adrianobarbosa1.github.io',
   title: 'JS.',
 }
 
@@ -24,25 +26,24 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Movie Tracker',
+    name: 'Meu lote minha historia, Frontend',
+    alt: 'Meu lote minha historia, Frontend',
+    img: img1,
     description:
-      'As users, we see a page that lets anyone look for the movies from the search bar by key words, and obtaining the actual or similar movies with their years, actors, rating, and description information by recommendation. In addition, they can search the nearby theaters from where they currently are located.',
-    stack: [
-      'localstorage',
-      'Openweather API',
-      'Google Map API',
-      'Movie Database API',
-    ],
-    sourceCode: 'https://github.com/Mike-C-Sanders/Movie-Tracker',
-    livePreview: 'https://mike-c-sanders.github.io/Movie-Tracker/',
+      'Projeto realizado para a prefeitura de Anápolis, utilizei o Nestjs e o framwork Chakra UI',
+    stack: ['Correios API', 'React.js', 'Redux Tookit', 'Chackra UI', 'Docker'],
+    sourceCode: 'https://github.com/adrianobarbosa1/frontend-mlmh',
+    livePreview: 'http://meuloteminhahistoria.anapolis.go.gov.br/',
   },
   {
-    name: 'Event Planner',
+    name: 'Meu lote minha historia, Backend',
+    alt: 'Meu lote minha historia, Backend',
+    img: img2,
     description:
-      'Event Planner was designed with the partier in mind, the one who wants to find fine dinning or a friend to have a good time. Event Planner is the easiest way for anyone to find an event to attend, create or host your own event or browse whats happening in your local area.',
-    stack: ['swiper.js', 'npm', 'jawsdb', 'handlebars', 'express', 'nodejs'],
-    sourceCode: 'https://github.com/Morganbb104/Event_Planner_project2',
-    livePreview: 'https://obscure-chamber-98928.herokuapp.com/',
+      'RESTful API Meu lote minha historia, projeto realizado para a prefeitura de Anápolis, backend com mongoDB, Atuhetication de usuario, upload de imagens usando o Multer, validação de dados com Joi, documentado com Swagger e swagger-ui-express, além de outras bibliotecas ',
+    stack: ['Express.js', 'MongoDB', 'Nodejs', 'Docker'],
+    sourceCode: 'https://github.com/adrianobarbosa1/backend-mlmh',
+    livePreview: 'https://github.com/adrianobarbosa1/backend-mlmh',
   },
   {
     name: 'Resource Planner',

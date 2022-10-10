@@ -7,6 +7,8 @@ const ProjectContainer = ({ project }) => (
   <div className='project'>
     <h3>{project.name}</h3>
 
+    <img src={project.img} alt={project.alt} />
+
     <p className='project__description'>{project.description}</p>
     {project.stack && (
       <ul className='project__stack'>
@@ -23,6 +25,7 @@ const ProjectContainer = ({ project }) => (
         href={project.sourceCode}
         aria-label='source code'
         className='link link--icon'
+        target='_blanck'
       >
         <GitHubIcon />
       </a>
@@ -33,6 +36,7 @@ const ProjectContainer = ({ project }) => (
         href={project.livePreview}
         aria-label='live preview'
         className='link link--icon'
+        target='_blanck'
       >
         <LaunchIcon />
       </a>
