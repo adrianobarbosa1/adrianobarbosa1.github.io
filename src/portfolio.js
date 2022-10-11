@@ -15,7 +15,8 @@ const about = {
   role: 'Full stack developer',
   description:
     'Sou formado em Análise e Desenvolvimento de Sistemas, Programador e Desenvolvedor há mais de 6 anos, atuando diretamente no mercado. Tive início na carreira em 2016 quando descobri meu maior vício: códigos. Meu primeiro trabalho foi na Secretaria da Educação em Anápolis, que me proporcionou um alavancamento em minhas habilidades, a partir daí começei a fazer projetos externos das mais diversas formas, websites, aplicativos, sistemas, adquiri um vasto conhecimento. Nos dias de hoje me tornei um desenvolvedor Full stack, trabalhando com Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e Nextjs, React, diversos frameworks css, no lado cliente (Front-end), estou sempre me atualizando e aprendendo.',
-  resume: 'https://pdf',
+  Currículo:
+    'https://drive.google.com/file/d/1wrRC68PPVmE3_-X2NSnbOvekUdp3vwbH/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/adriano-barbosa-10892750/',
     github: 'https://github.com/adrianobarbosa1',
