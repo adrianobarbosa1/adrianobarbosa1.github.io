@@ -8,7 +8,9 @@ const About = () => {
 
   return (
     <div className='about center'>
-      {photo && <img height='200px' alt='Avatar placeholder' src={photo} />}
+      <div className='container-img'>
+        {photo && <img height='200px' alt='Avatar placeholder' src={photo} />}
+      </div>
       {name && (
         <h1>
           <span className='about__name'>{name}.</span>
