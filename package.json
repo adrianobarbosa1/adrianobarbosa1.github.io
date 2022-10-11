@@ -24,7 +24,7 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "predeploy": "npm run build",
-    "deploy": "aws s3 sync build/ s3://adrianobarbosa --acl public-read"
+    "deploy": "aws s3 sync build/ s3://adrianobarbosa.dev.br --acl public-read"
   },
   "browserslist": {
     "production": [
