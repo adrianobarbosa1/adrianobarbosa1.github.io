@@ -45,14 +45,14 @@ const projects = [
     sourceCode: 'https://github.com/adrianobarbosa1/backend-mlmh',
     livePreview: 'https://github.com/adrianobarbosa1/backend-mlmh',
   },
-  {
-    name: 'Resource Planner',
-    description:
-      'Resource Planner is able to distrute the current resource including human resource,time and budget in one company in order to help user to manahe their projects',
-    stack: ['html-css-javascript', 'sequelize', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
+  // {
+  //   name: 'Resource Planner',
+  //   description:
+  //     'Resource Planner is able to distrute the current resource including human resource,time and budget in one company in order to help user to manahe their projects',
+  //   stack: ['html-css-javascript', 'sequelize', 'React'],
+  //   sourceCode: 'https://github.com',
+  //   livePreview: 'https://github.com',
+  // },
 ]
 
 const skills = [
