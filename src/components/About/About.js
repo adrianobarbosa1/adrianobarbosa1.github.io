@@ -24,7 +24,7 @@ const About = () => {
         {resume && (
           <a href={resume}>
             <span type='button' className='btn btn--outline'>
-              Resume
+              Currículo
             </span>
           </a>
         )}
