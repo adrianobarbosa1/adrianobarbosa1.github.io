@@ -31,7 +31,7 @@ const projects = [
     alt: 'Meu lote minha historia, Frontend',
     img: img1,
     description:
-      'Projeto realizado para a prefeitura de Anápolis, utilizei o Nestjs e o framwork Chakra UI',
+      'Projeto realizado para a prefeitura de Anápolis, utilizei o Nextjs e o framwork Chakra UI',
     stack: ['Correios API', 'React.js', 'Redux Tookit', 'Chackra UI', 'Docker'],
     sourceCode: 'https://github.com/adrianobarbosa1/frontend-mlmh',
     livePreview: 'http://meuloteminhahistoria.anapolis.go.gov.br/',
