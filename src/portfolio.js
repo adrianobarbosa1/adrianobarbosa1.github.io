@@ -1,6 +1,6 @@
-import aboutpic from './components/Access/adriano.jpg'
 import img1 from './assets/img/1.png'
 import img2 from './assets/img/2.png'
+import aboutpic from './components/Access/adriano.jpg'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -14,7 +14,11 @@ const about = {
   name: 'Adriano Barbosa',
   role: 'Full stack developer',
   description:
-    'Sou formado em Análise e Desenvolvimento de Sistemas, Programador e Desenvolvedor há mais de 6 anos, atuando diretamente no mercado. Tive início na carreira em 2016 quando descobri meu maior vício: códigos. Meu primeiro trabalho foi na Secretaria da Educação em Anápolis, que me proporcionou um alavancamento em minhas habilidades, a partir daí começei a fazer projetos externos das mais diversas formas, websites, aplicativos, sistemas, adquiri um vasto conhecimento. Nos dias de hoje me tornei um desenvolvedor Full stack, trabalhando com Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e Nextjs, React, diversos frameworks css, no lado cliente (Front-end), estou sempre me atualizando e aprendendo.',
+    `'Sou graduado em Análise e Desenvolvimento de Sistemas e tenho mais de seis anos de experiência como Programador e Desenvolvedor, atuando diretamente no mercado. Minha paixão pela programação começou em 2016 e desde então venho aprimorando minhas habilidades e conhecimentos através de projetos externos, incluindo desenvolvimento de websites, aplicativos e sistemas.
+
+    Iniciei minha carreira na Secretaria da Educação em Anápolis, onde tive a oportunidade de consolidar minhas competências e me desafiar profissionalmente. Atualmente, sou um desenvolvedor Full stack, habilidoso em trabalhar com Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e Nextjs, React, diversos frameworks css no lado cliente (Front-end). Sempre busco me manter atualizado e continuamente aprendendo para aprimorar minha técnica.
+    
+    Acredito que a chave para o sucesso é ser dedicado e comprometido em fornecer soluções inovadoras e eficientes para os clientes. Estou entusiasmado para novos desafios e oportunidades para contribuir com minhas habilidades.`,
   resume:
     'https://drive.google.com/file/d/1wrRC68PPVmE3_-X2NSnbOvekUdp3vwbH/view?usp=sharing',
   social: {
@@ -85,3 +89,4 @@ const contact = {
 }
 
 export { header, about, projects, skills, contact }
+
