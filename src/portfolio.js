@@ -14,7 +14,7 @@ const about = {
   name: 'Adriano Barbosa',
   role: 'Full stack developer',
   description:
-    `'Sou graduado em Análise e Desenvolvimento de Sistemas e tenho mais de seis anos de experiência como Programador e Desenvolvedor, atuando diretamente no mercado. Minha paixão pela programação começou em 2016 e desde então venho aprimorando minhas habilidades e conhecimentos através de projetos externos, incluindo desenvolvimento de websites, aplicativos e sistemas.
+    `Sou graduado em Análise e Desenvolvimento de Sistemas e tenho mais de seis anos de experiência como Programador e Desenvolvedor, atuando diretamente no mercado. Minha paixão pela programação começou em 2016 e desde então venho aprimorando minhas habilidades e conhecimentos através de projetos externos, incluindo desenvolvimento de websites, aplicativos e sistemas.
 
     Iniciei minha carreira na Secretaria da Educação em Anápolis, onde tive a oportunidade de consolidar minhas competências e me desafiar profissionalmente. Atualmente, sou um desenvolvedor Full stack, habilidoso em trabalhar com Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e Nextjs, React, diversos frameworks css no lado cliente (Front-end). Sempre busco me manter atualizado e continuamente aprendendo para aprimorar minha técnica.
     
