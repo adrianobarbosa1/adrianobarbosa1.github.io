@@ -8,7 +8,7 @@ interface IThemeProvider {
 }
 
 const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
-  const [themeName, setThemeName] = useState("light");
+  const [themeName, setThemeName] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const darkMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");

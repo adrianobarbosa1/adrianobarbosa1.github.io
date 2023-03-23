@@ -8,6 +8,7 @@ import Header from "./layout/components/Header/Header";
 import ScrollToTop from "./layout/components/ScrollToTop/ScrollToTop";
 
 function App() {
+  //@ts-ignore
   const [{ themeName }] = useContext(ThemeContext);
 
   return (

@@ -9,6 +9,7 @@ import { contact, projects, skills } from "../../../portfolio";
 import "./Navbar.css";
 
 const Navbar = () => {
+  //@ts-ignore
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const [showNavList, setShowNavList] = useState(false);
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ const Navbar = () => {
   return (
     <nav className="center nav">
       <ul
+        //@ts-ignore
         style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
       >
