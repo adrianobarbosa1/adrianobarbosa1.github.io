@@ -1,0 +1,41 @@
+.post{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #f1f1f1;
+    padding: 1.5rem 0;
+}
+
+
+.info{
+    margin:6px 0 18px 0;
+    color: var(--clr-fg-alt);
+    display: flex;
+    gap: 10px;
+    
+}
+.info .author{
+    color:var(--clr-primary);
+    font-weight: bold;
+}
+
+.image{
+    max-height:300px;
+    display: flex;
+    overflow:hidden;
+}
+
+.image img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+.texts{
+    padding:0 1.5rem ;
+}
+
+@media screen and (min-width: 600px) {
+.post{
+        display:column;
+    }
+}
