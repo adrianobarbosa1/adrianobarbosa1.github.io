@@ -1,7 +1,7 @@
-import Brightness2Icon from "@material-ui/icons/Brightness2";
-import CloseIcon from "@material-ui/icons/Close";
-import MenuIcon from "@material-ui/icons/Menu";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
+import Brightness2Icon from "@mui/icons-material/Brightness2";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../../contexts";
