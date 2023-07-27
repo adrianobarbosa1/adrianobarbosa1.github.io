@@ -1,30 +1,19 @@
 import img1 from "./assets/img/1.png";
 import img2 from "./assets/img/2.png";
-import aboutpic from "./components/Access/adriano.jpg";
+import aboutpic from "./components/Access/adriano.png";
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: "https://adrianobarbosa1.github.io",
+  homepage: "https://adrianobarbosa.dev.br/",
   title: "Blog",
 };
-
-const dataDeReferencia = new Date(2017, 2, 15); // 15 de março de 2016
-const dataAtual = new Date();
-const diferencaEmAnos =
-  dataAtual.getFullYear() - dataDeReferencia.getFullYear();
-const experiencia =
-  diferencaEmAnos === 1 ? "um ano" : `${diferencaEmAnos} anos`;
 
 const about = {
   photo: aboutpic,
   // all the properties are optional - can be left empty or deleted
   name: "Adriano Barbosa",
-  role: "Full stack developer",
-  description: `Sou graduado em Análise e Desenvolvimento de Sistemas e tenho mais de ${experiencia} de experiência como Programador e Desenvolvedor, atuando diretamente no mercado. Minha paixão pela programação começou em 2016 e desde então venho aprimorando minhas habilidades e conhecimentos através de projetos externos, incluindo desenvolvimento de websites, aplicativos e sistemas.
-
-    Iniciei minha carreira na Secretaria da Educação em Anápolis, onde tive a oportunidade de consolidar minhas competências e me desafiar profissionalmente. Atualmente, sou um desenvolvedor Full stack, habilidoso em trabalhar com Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e Nextjs, React, diversos frameworks css no lado cliente (Front-end). Sempre busco me manter atualizado e continuamente aprendendo para aprimorar minha técnica.
-    
-    Acredito que a chave para o sucesso é ser dedicado e comprometido em fornecer soluções inovadoras e eficientes para os clientes. Estou entusiasmado para novos desafios e oportunidades para contribuir com minhas habilidades.`,
+  role: "",
+  description: ``,
   resume: "",
   //   'https://drive.google.com/file/d/1wrRC68PPVmE3_-X2NSnbOvekUdp3vwbH/view?usp=sharing',
   social: {
@@ -73,7 +62,7 @@ const skills = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "Express",
+  "Nodejs",
   "Nestjs",
   "MySQL",
   "MongoDB",
@@ -87,6 +76,8 @@ const skills = [
   "Git",
   "Docker",
   "Microservices",
+  "kubernetes",
+  "skaffold",
 ];
 
 const contact = {
@@ -94,4 +85,4 @@ const contact = {
   email: "adriano.barbosa100@gmail.com",
 };
 
-export { header, about, projects, skills, contact };
+export { about, contact, header, projects, skills };

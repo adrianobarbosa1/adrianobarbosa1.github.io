@@ -5,7 +5,7 @@ import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../../contexts";
-import { contact, projects, skills } from "../../../portfolio";
+import { projects, skills } from "../../../portfolio";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
       >
         {projects.length ? (
           <li className="nav__list-item">
-            <Link to="/home" onClick={toggleNavList} className="link link--nav">
+            <Link to="/" onClick={toggleNavList} className="link link--nav">
               Home
             </Link>
           </li>
@@ -34,24 +34,12 @@ const Navbar = () => {
         {skills.length ? (
           <li className="nav__list-item">
             <Link
-              to="/perfil"
+              to="/portfolio"
               onClick={toggleNavList}
               className="link link--nav"
             >
-              Perfil
+              Portfólio
             </Link>
-          </li>
-        ) : null}
-
-        {contact.email ? (
-          <li className="nav__list-item">
-            <a
-              href="#contact"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Login
-            </a>
           </li>
         ) : null}
       </ul>

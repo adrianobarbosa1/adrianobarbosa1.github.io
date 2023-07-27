@@ -1,8 +1,8 @@
 .post{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     border-top: 2px solid #f1f1f1;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
 }
 
 
@@ -19,7 +19,6 @@
 }
 
 .image{
-    max-height:300px;
     display: flex;
     overflow:hidden;
 }
@@ -27,7 +26,7 @@
 .image img {
     object-fit: cover;
     object-position: center center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .texts{
@@ -37,5 +36,11 @@
 @media screen and (min-width: 600px) {
 .post{
         display:column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
     }
 }

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="about center">
       <div className="container-img">
-        {photo && <img height="200px" alt="Avatar placeholder" src={photo} />}
+        {photo && <img height="260px" alt="Avatar placeholder" src={photo} />}
       </div>
       {name && (
         <h1>
