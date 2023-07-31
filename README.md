@@ -1,5 +1,7 @@
 # adrianobarbosa1.github.io
 
+https://www.youtube.com/watch?v=pl8debeEcjY
+
 Kubernetes Cluster Setup (v1.27.1) on UBUNTU 22.04.2
 
 sudo apt-get update && apt-get upgrade -y
@@ -58,6 +60,9 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 sudo apt update
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+
+##################################################################################################
+this command
 
 kubeadm init
 
