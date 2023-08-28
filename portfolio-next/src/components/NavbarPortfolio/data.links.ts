@@ -6,13 +6,18 @@ export const links = [
   },
   {
     id: 2,
+    title: "Sobre",
+    url: "/#about",
+  },
+  {
+    id: 2,
     title: "Portfólio",
-    url: "/portfolio",
+    url: "/#portfolio",
   },
   {
     id: 3,
     title: "Contato",
-    url: "/contact",
+    url: "/#contact",
   },
   {
     id: 4,
