@@ -20,7 +20,6 @@ export const skills = [
   "PostgreSQL",
   "Oracle SQL",
 
-  "devops",
   "Docker",
   "Kubernetes",
   "Microservices",
