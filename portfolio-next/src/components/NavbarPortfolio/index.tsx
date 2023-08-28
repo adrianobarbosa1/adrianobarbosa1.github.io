@@ -1,13 +1,41 @@
 "use client";
 import { useStateContext } from "@/contexts/ContextProvider";
 import Link from "next/link";
+import { useEffect } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BiSolidSun } from "react-icons/bi";
 import { FaMoon } from "react-icons/fa";
 import { links } from "./data.links";
 
 const NavbarPortfolio = () => {
-  const { setColor, setMode, currentMode, currentColor, setThemeSettings } =
-    useStateContext();
+  const {
+    activeMenu,
+    setActiveMenu,
+    handleClick,
+    isClicked,
+    setScreenSize,
+    screenSize,
+    currentColor,
+    setMode,
+    currentMode,
+  } = useStateContext();
+
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (screenSize !== undefined && screenSize <= 900) {
+      setActiveMenu(false);
+    } else {
+      setActiveMenu(true);
+    }
+  }, [screenSize]);
+
+  const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   return (
     <nav className=" flex justify-between my-8 md:my-12 mx-auto max-w-6xl w-11/12">
@@ -19,6 +47,11 @@ const NavbarPortfolio = () => {
           >
             Blog
           </Link>
+        </li>
+        <li className="ml-6 my-1 mt-2">
+          <button title="Menu" onClick={handleActiveMenu} color={currentColor}>
+            <AiOutlineMenu />
+          </button>
         </li>
       </ul>
 
@@ -40,50 +73,6 @@ const NavbarPortfolio = () => {
           </button>
         </li>
       </ul>
-
-      {/* <ul
-        //@ts-ignore
-        style={{ display: showNavList ? "flex" : null }}
-        className="nav__list"
-      >
-        {projects.length ? (
-          <li className="nav__list-item">
-            <Link to="/" onClick={toggleNavList} className="link link--nav">
-              Home
-            </Link>
-          </li>
-        ) : null}
-
-        {skills.length ? (
-          <li className="nav__list-item">
-            <Link
-              to="/portfolio"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Portfólio
-            </Link>
-          </li>
-        ) : null}
-      </ul>
-
-      <button
-        type="button"
-        onClick={toggleTheme}
-        className="btn btn--icon nav__theme"
-        aria-label="toggle theme"
-      >
-        {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
-
-      <button
-        type="button"
-        onClick={toggleNavList}
-        className="btn btn--icon nav__hamburger"
-        aria-label="toggle navigation"
-      >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
-      </button> */}
     </nav>
   );
 };
