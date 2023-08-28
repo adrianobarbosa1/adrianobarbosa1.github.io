@@ -4,61 +4,64 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="items-center flex flex-col mt-10">
-      <h2 className="mt-10 text-3xl font-bold text-defaultFgAlt">
-        Desenvolvedor Full Stack.
-      </h2>
-      <p className="mt-10 ">
-        Como um desenvolvedor Fullstack graduado em Análise e Desenvolvimento de
-        Sistema, eu possuo uma vasta experiência em todas as etapas do ciclo de
-        desenvolvimento de software, desde a concepção até a implementação.
-        Minhas habilidades em Nodejs, React e MongoDB me permitem desenvolver
-        aplicativos de alta qualidade e escaláveis para atender às necessidades
-        de diversos tipos de negócios. Minha paixão pela programação surgiu em
-        2016 e desde então venho me dedicando a aprimorar minhas habilidades e
-        conhecimentos através de projetos, tais como desenvolvimento de
-        websites, aplicativos e sistemas. Meu crescimento profissional teve
-        início na Secretaria da Educação em Anápolis, onde tive a oportunidade
-        de consolidar minhas competências e me desafiar profissionalmente. Hoje,
-        como um desenvolvedor Full stack, sou habilidoso em trabalhar com
-        Nestjs, Express, mongoDB, SQL, PostgreSQL no lado servidor (Back-end) e
-        Nextjs, React, além de diversos frameworks CSS no lado cliente
-        (Front-end). Sempre busco me manter atualizado e continuamente
-        aprendendo para aprimorar minha técnica, acredito que essa é a chave
-        para o sucesso. Estou convicto que o comprometimento e a dedicação são
-        fundamentais para fornecer soluções inovadoras e eficientes para nossos
-        clientes. Estou ansioso por novos desafios e oportunidades para
-        contribuir com minhas habilidades. Se você está buscando um
-        desenvolvedor Fullstack experiente e motivado para integrar sua equipe,
-        por favor, entre em contato comigo. Será um prazer discutir como posso
-        contribuir para sua empresa e trabalhar em conjunto para alcançar seus
-        objetivos de negócios.
+    <section id="about" className="items-center flex flex-col mt-10 py-5">
+      <h2 className="section_title">Desenvolvedor Full Cycle.</h2>
+      <p className=" mb-6">
+        Como um desenvolvedor Full Cycle formado em Análise e Desenvolvimento de
+        Sistemas, trago uma ampla experiência abrangendo todos os estágios do
+        ciclo de desenvolvimento de software, desde a concepção até a
+        implementação. Minhas habilidades em Node.js, React e MongoDB
+        capacitam-me a criar aplicativos de alta qualidade e escaláveis que
+        atendem às demandas diversas de várias empresas.
+      </p>
+      <p className="mb-6">
+        Minha paixão pela programação nasceu em 2016 e, desde então, tenho me
+        dedicado a aprimorar minhas competências e conhecimentos por meio de
+        projetos variados, como o desenvolvimento de websites, aplicativos e
+        sistemas. Meu crescimento profissional teve início na Secretaria de
+        Educação em Anápolis, onde pude fortalecer minhas habilidades e
+        enfrentar desafios de maneira profissional. Hoje, como um desenvolvedor
+        Full Cycle, possuo habilidades sólidas no trabalho com Nest.js, Express,
+        MongoDB, SQL e PostgreSQL no backend, e Next.js, React, além de diversos
+        frameworks CSS no frontend.
+      </p>
+      <p className="mb-6">
+        Mantenho-me sempre atualizado e continuo a aprender constantemente,
+        acreditando que esse é o cerne do sucesso. Tenho convicção de que
+        comprometimento e dedicação são essenciais para fornecer soluções
+        inovadoras e eficazes aos nossos clientes. Estou ansioso por novas
+        oportunidades e desafios para aplicar minhas habilidades. Se você está
+        em busca de um desenvolvedor Full Cycle experiente e motivado para
+        integrar sua equipe, por favor, entre em contato comigo. Será um prazer
+        discutir como posso contribuir para a sua empresa e colaborar para
+        alcançar os objetivos empresariais.
       </p>
 
-      <div className="about__contact center">
-        <>
-          <Link
-            href="https://github.com/adrianobarbosa1"
-            aria-label="github"
-            className="link link--icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub />
-          </Link>
-
-          <Link
-            href="https://www.linkedin.com/in/adrianobarbosa-dev/"
-            aria-label="linkedin"
-            className="link link--icon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-          </Link>
-        </>
+      <div>
+        <ul className="about__contact center flex space-x-6">
+          <li className=" my-1 pb-2 relative link_animation">
+            <Link
+              href="https://github.com/adrianobarbosa1"
+              aria-label="github"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className="w-8 h-8  hover:text-defaultPrimary hover:transition-all hover:duration-300" />
+            </Link>
+          </li>
+          <li className=" my-1 pb-2 relative link_animation">
+            <Link
+              href="https://www.linkedin.com/in/adrianobarbosa-dev/"
+              aria-label="linkedin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="w-8 h-8  hover:text-defaultPrimary hover:transition-all hover:duration-300" />
+            </Link>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
