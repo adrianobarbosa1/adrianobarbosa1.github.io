@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  darkMode: ["class"],
   theme: {
     container: {
       center: true,
@@ -18,50 +18,17 @@ module.exports = {
     extend: {
       colors: {
         // --------------LIGHT---------------------
-        defaultBg: "#FCFCFC",
-        defaultBgAlt: '#FFFFFF',
-        defaultFg: "#555555",
-        defaultFgAlt: '#444444',
-        defaultPrimary: "#2978B5",
+        lightBg: "#FCFCFC",
+        lightBgAlt: '#FFFFFF',
+        lightTexto: "#555555",
+        lightTextoTitulo: '#444444',
+        colorPrimary: "#2978B5",
         // --------------DARK---------------------
-        defaultDarkBg: "#23283E",
-        defaultDarkBgAlt: '#2A2F4C',
-        defaultDarkFg: "#BDBDDD",
-        defaultDarkFgAlt: '#CDCDFF',
-        defaultDarkPrimary: '#90A0D9',
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        darkBg: "#23283E",
+        darkBgAlt: '#2A2F4C',
+        darkTexto: "#BDBDDD",
+        darkTextoTitulo: '#CDCDFF',
+        darkcolorPrimary: '#90A0D9',
       },
       borderRadius: {
         lg: "var(--radius)",
