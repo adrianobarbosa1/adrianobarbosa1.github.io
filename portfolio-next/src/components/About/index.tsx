@@ -5,8 +5,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const About = () => {
   return (
     <section id="about" className="items-center flex flex-col mt-10 py-5">
-      <h2 className="section_title">Desenvolvedor Full Cycle.</h2>
-      <p className=" mb-6">
+      <h2 className="section_title dark:text-darkTextoTitulo">
+        Desenvolvedor Full Cycle.
+      </h2>
+      <p className=" mb-6 dark:text-darkTexto">
         Como um desenvolvedor Full Cycle formado em Análise e Desenvolvimento de
         Sistemas, trago uma ampla experiência abrangendo todos os estágios do
         ciclo de desenvolvimento de software, desde a concepção até a
@@ -14,7 +16,7 @@ const About = () => {
         capacitam-me a criar aplicativos de alta qualidade e escaláveis que
         atendem às demandas diversas de várias empresas.
       </p>
-      <p className="mb-6">
+      <p className="mb-6 dark:text-darkTexto">
         Minha paixão pela programação nasceu em 2016 e, desde então, tenho me
         dedicado a aprimorar minhas competências e conhecimentos por meio de
         projetos variados, como o desenvolvimento de websites, aplicativos e
@@ -25,7 +27,7 @@ const About = () => {
         MongoDB, SQL e PostgreSQL no backend, e Next.js, React, além de diversos
         frameworks CSS no frontend.
       </p>
-      <p className="mb-6">
+      <p className="mb-6 dark:text-darkTexto">
         Mantenho-me sempre atualizado e continuo a aprender constantemente,
         acreditando que esse é o cerne do sucesso. Tenho convicção de que
         comprometimento e dedicação são essenciais para fornecer soluções
@@ -44,9 +46,10 @@ const About = () => {
               href="https://github.com/adrianobarbosa1"
               aria-label="github"
               target="_blank"
+              className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaGithub className="w-8 h-8  hover:text-defaultPrimary hover:transition-all hover:duration-300" />
+              <FaGithub className="w-8 h-8  hover:text-colorPrimary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
             </Link>
           </li>
           <li className=" my-1 pb-2 relative link_animation">
@@ -54,9 +57,10 @@ const About = () => {
               href="https://www.linkedin.com/in/adrianobarbosa-dev/"
               aria-label="linkedin"
               target="_blank"
+              className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaLinkedin className="w-8 h-8  hover:text-defaultPrimary hover:transition-all hover:duration-300" />
+              <FaLinkedin className="w-8 h-8  hover:text-colorPrimary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
             </Link>
           </li>
         </ul>
