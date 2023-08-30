@@ -24,11 +24,8 @@ interface ContextProps {
   setScreenSize: Dispatch<SetStateAction<number | undefined>>;
   themeSettings: boolean;
   setThemeSettings: Dispatch<SetStateAction<boolean>>;
-  currentMode: string;
-  setCurrentMode: Dispatch<SetStateAction<string>>;
   currentColor: string;
   setCurrentColor: Dispatch<SetStateAction<string>>;
-  setMode: (clicked: React.ChangeEvent<HTMLInputElement>) => void;
   setColor: (clicked: string) => void;
 }
 
@@ -48,15 +45,9 @@ interface IStateProviderProps {
 export const StateProvider: React.FC<IStateProviderProps> = ({ children }) => {
   const [screenSize, setScreenSize] = useState<number | undefined>(undefined);
   const [currentColor, setCurrentColor] = useState("#03C9D7");
-  const [currentMode, setCurrentMode] = useState<string>("Light");
   const [themeSettings, setThemeSettings] = useState(false);
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
-
-  const setMode = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCurrentMode(e.target.value);
-    localStorage.setItem("themeMode", e.target.value);
-  };
 
   const setColor = (color: string) => {
     setCurrentColor(color);
@@ -78,11 +69,8 @@ export const StateProvider: React.FC<IStateProviderProps> = ({ children }) => {
         handleClick,
         themeSettings,
         setThemeSettings,
-        currentMode,
-        setCurrentMode,
         currentColor,
         setCurrentColor,
-        setMode,
         setColor,
       }}
     >

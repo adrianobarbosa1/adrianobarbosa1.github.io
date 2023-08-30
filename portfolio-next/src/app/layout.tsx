@@ -1,5 +1,6 @@
 import NavbarPortfolio from "@/components/NavbarPortfolio";
 import { StateProvider } from "@/contexts/ContextProvider";
+import ThemeProvider from "@/contexts/ThemeProvider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -23,8 +24,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={poppins.className}>
         <StateProvider>
-          <NavbarPortfolio />
-          {children}
+          <ThemeProvider>
+            <NavbarPortfolio />
+            {children}
+          </ThemeProvider>
         </StateProvider>
       </body>
     </html>

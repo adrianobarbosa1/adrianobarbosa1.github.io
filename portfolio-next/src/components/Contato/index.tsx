@@ -5,7 +5,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Contato = () => {
   return (
     <div id="contact" className="items-center flex flex-col mt-10">
-      <h2 className="mt-10 text-3xl font-bold text-defaultFgAlt">Contato</h2>
+      <h2 className="mt-10 text-3xl font-bold text-lightTextoTitulo">
+        Contato
+      </h2>
 
       <div className="about__contact center">
         <>
