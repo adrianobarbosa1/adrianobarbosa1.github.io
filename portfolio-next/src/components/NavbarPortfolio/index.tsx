@@ -73,7 +73,7 @@ const NavbarPortfolio = () => {
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
             {theme === "light" ? (
-              <FaMoon className="text-lightTextoTitulo" />
+              <FaMoon className="text-lightTextoTitulo hover:text-colorPrimary" />
             ) : (
               <BiSolidSun className="dark:text-darkTexto hover:dark:text-colorPrimary" />
             )}
