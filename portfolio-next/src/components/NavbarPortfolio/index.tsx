@@ -43,7 +43,7 @@ const NavbarPortfolio = () => {
         <li className="ml-6 my-1">
           <Link
             href="/"
-            className="text-2xl font-bold pb-2 relative link_animation text-colorPrimary dark:text-darkcolorPrimary"
+            className="text-2xl font-bold pb-2 relative link_animation text-primary dark:text-darkTexto"
           >
             Blog
           </Link>
@@ -61,7 +61,7 @@ const NavbarPortfolio = () => {
             <Link
               href={link.url}
               key={link.id}
-              className="pb-2 relative text-lightTexto lowercase font-medium link_animation hover:text-colorPrimary dark:text-darkTexto"
+              className="pb-2 relative text-lightTexto lowercase font-medium link_animation hover:text-primary dark:text-darkTexto"
             >
               {link.title}
             </Link>
@@ -73,9 +73,9 @@ const NavbarPortfolio = () => {
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
             {theme === "light" ? (
-              <FaMoon className="text-lightTextoTitulo hover:text-colorPrimary" />
+              <FaMoon className="text-lightTextoTitulo hover:text-primary" />
             ) : (
-              <BiSolidSun className="dark:text-darkTexto hover:dark:text-colorPrimary" />
+              <BiSolidSun className="dark:text-darkTexto hover:dark:text-primary" />
             )}
           </button>
         </li>
