@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="items-center flex flex-col mt-10 py-5">
+    <section id="about" className="items-center flex flex-col sm:mt-6 py-5">
       <h2 className="section_title dark:text-darkTextoTitulo">
         Desenvolvedor Full Cycle.
       </h2>
@@ -49,7 +49,7 @@ const About = () => {
               className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaGithub className="w-8 h-8  hover:text-colorPrimary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
+              <FaGithub className="w-8 h-8  hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
             </Link>
           </li>
           <li className=" my-1 pb-2 relative link_animation">
@@ -60,7 +60,7 @@ const About = () => {
               className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaLinkedin className="w-8 h-8  hover:text-colorPrimary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
+              <FaLinkedin className="w-8 h-8  hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
             </Link>
           </li>
         </ul>
