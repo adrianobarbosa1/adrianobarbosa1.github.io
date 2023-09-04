@@ -19,8 +19,10 @@ const Portfolio = () => {
       </h2>
       {dataPortfolio.map((item, i) => (
         <div
-          className={` flex flex-col sm:flex-row sm:w-full sm:gap-12 sm:mb-24 ${
-            i % 2 === 0 ? "" : "sm:flex-row-reverse bg-gray-100" // Aplica flex-row-reverse para indices pares
+          className={` flex flex-col mt-10 sm:flex-row sm:w-full sm:gap-12 sm:mb-16 ${
+            i % 2 === 0
+              ? ""
+              : "sm:flex-row-reverse bg-gray-100 dark:bg-gray-700" // Aplica flex-row-reverse para indices pares
           }`}
         >
           <div
