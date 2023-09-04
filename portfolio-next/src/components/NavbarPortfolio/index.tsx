@@ -1,5 +1,6 @@
 "use client";
 import { useStateContext } from "@/contexts/ContextProvider";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -16,9 +17,8 @@ const NavbarPortfolio = () => {
     setScreenSize,
     screenSize,
     currentColor,
-    setMode,
-    currentMode,
   } = useStateContext();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -43,7 +43,7 @@ const NavbarPortfolio = () => {
         <li className="ml-6 my-1">
           <Link
             href="/"
-            className="text-2xl font-bold pb-2 relative link_animation text-defaultPrimary"
+            className="text-2xl font-bold pb-2 relative link_animation text-primary dark:text-darkTexto"
           >
             Blog
           </Link>
@@ -61,15 +61,22 @@ const NavbarPortfolio = () => {
             <Link
               href={link.url}
               key={link.id}
-              className="pb-2 relative text-defaultFg lowercase font-medium link_animation hover:text-defaultPrimary"
+              className="pb-2 relative text-lightTexto lowercase font-medium link_animation hover:text-primary dark:text-darkTexto"
             >
               {link.title}
             </Link>
           </li>
         ))}
-        <li className="ml-6 my-1 hover:text-defaultPrimary">
-          <button type="button" onClick={() => setMode}>
-            {currentMode === "Dark" ? <BiSolidSun /> : <FaMoon />}
+        <li className="ml-6 my-1 mt-2 hover:text-colorPrimary">
+          <button
+            type="button"
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          >
+            {theme === "light" ? (
+              <FaMoon className="text-lightTextoTitulo hover:text-primary" />
+            ) : (
+              <BiSolidSun className="dark:text-darkTexto hover:dark:text-primary" />
+            )}
           </button>
         </li>
       </ul>

@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  darkMode: ["class"],
   theme: {
     container: {
       center: true,
@@ -18,17 +18,14 @@ module.exports = {
     extend: {
       colors: {
         // --------------LIGHT---------------------
-        defaultBg: "#FCFCFC",
-        defaultBgAlt: '#FFFFFF',
-        defaultFg: "#555555",
-        defaultFgAlt: '#444444',
-        defaultPrimary: "#2978B5",
-        // --------------DARK---------------------
-        defaultDarkBg: "#23283E",
-        defaultDarkBgAlt: '#2A2F4C',
-        defaultDarkFg: "#BDBDDD",
-        defaultDarkFgAlt: '#CDCDFF',
-        defaultDarkPrimary: '#90A0D9',
+        lightBgAlt: '#FFFFFF',
+        lightTexto: "#555555",
+        lightTextoTitulo: '#444444',
+        // --------------DARK----------------------
+        darkBgAlt: '#2A2F4C',
+        darkTexto: "#BDBDDD",
+        darkTextoTitulo: '#CDCDFF',
+        // --------------SHADCN--------------------
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
