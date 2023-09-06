@@ -4,7 +4,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="items-center flex flex-col sm:mt-6 py-5">
+    <section
+      id="about"
+      className="items-center flex flex-col sm:mt-6 py-5 max-w-6xl w-11/12 px-4"
+    >
       <h2 className="section_title dark:text-darkTextoTitulo">
         Desenvolvedor Full Cycle.
       </h2>

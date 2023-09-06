@@ -26,7 +26,10 @@ const Contato = () => {
   }, []);
 
   return (
-    <div id="contact" className="items-center flex flex-col mt-10  w-full">
+    <div
+      id="contact"
+      className="items-center flex flex-col mt-10  max-w-6xl w-11/12 px-4"
+    >
       <h2 className="mt-10 text-3xl font-bold text-lightTextoTitulo dark:text-darkTextoTitulo">
         Contato
       </h2>
