@@ -5,6 +5,7 @@ const Footer = () => (
     <footer className="items-center flex flex-col mt-10 mb-10 sm:mt-20">
       <div className=" my-1 pb-2 relative link_animation">
         <Link
+          target="_blank"
           href="https://github.com/adrianobarbosa1"
           className=" text-lg font-bold text-lightTextoTitulo dark:text-darkTextoTitulo sm:text-2xl py-1 
           hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300
