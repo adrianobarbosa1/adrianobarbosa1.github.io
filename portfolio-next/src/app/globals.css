@@ -99,6 +99,10 @@ body {
   .section_title {
     @apply my-10  sm:text-3xl text-2xl font-bold text-lightTextoTitulo;
   }
+
+  .custom-input {
+    @apply px-4 py-2 border-2 border-primary dark:bg-background;
+  }
 }
 
 @layer base {
