@@ -28,7 +28,7 @@ const Contato = () => {
   return (
     <section
       id="contact"
-      className="items-center flex flex-col mt-10  max-w-6xl w-11/12 px-4"
+      className="items-center flex flex-col mt-10 sm:mt-6 py-5 max-w-6xl w-11/12 px-4"
     >
       <h2 className="mt-10 text-3xl font-bold text-lightTextoTitulo dark:text-darkTextoTitulo">
         Contato

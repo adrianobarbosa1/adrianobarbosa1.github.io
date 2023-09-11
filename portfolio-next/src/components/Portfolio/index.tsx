@@ -13,8 +13,11 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div id="portfolio" className="items-center flex flex-col mt-10 ">
-      <h2 className="mt-20 text-3xl font-bold text-lightTextoTitulo dark:text-darkTextoTitulo">
+    <div
+      id="portfolio"
+      className="items-center flex flex-col mt-10 sm:mt-6 py-5"
+    >
+      <h2 className="section_title mt-20 dark:text-darkTextoTitulo">
         Portfolio
       </h2>
       {dataPortfolio.map((item, i) => (

@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="items-center flex flex-col sm:mt-6 py-5 max-w-6xl w-11/12 px-4"
     >
-      <h2 className="section_title dark:text-darkTextoTitulo">
+      <h2 className="section_title mt-20 dark:text-darkTextoTitulo">
         Desenvolvedor Full Cycle.
       </h2>
       <p className=" mb-6 dark:text-darkTexto">
