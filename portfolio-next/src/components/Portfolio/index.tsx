@@ -40,7 +40,7 @@ const Portfolio = () => {
                 className="object-cover"
                 fill={true}
                 src="https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
-                alt=""
+                alt={item.altImage}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
