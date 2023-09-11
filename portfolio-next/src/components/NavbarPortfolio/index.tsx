@@ -76,7 +76,7 @@ const NavbarPortfolio = () => {
               </li>
             ))}
 
-            <li>
+            <li className="mt-1 py-2 pl-3 pr-4 md:p-0">
               <button
                 type="button"
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
