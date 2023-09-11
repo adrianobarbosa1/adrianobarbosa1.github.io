@@ -1,32 +1,34 @@
-export const links = [
+const dataLinks = [
   {
     id: 1,
     title: "Home",
-    url: "/",
+    href: "/",
   },
   {
     id: 2,
     title: "Sobre",
-    url: "/#about",
+    href: "/#about",
   },
   {
     id: 6,
     title: "Portfólio",
-    url: "/#portfolio",
+    href: "/#portfolio",
   },
   {
     id: 3,
     title: "Contato",
-    url: "/#contact",
+    href: "/#contact",
   },
   {
     id: 4,
     title: "Blog",
-    url: "/blog",
+    href: "/blog",
   },
   {
     id: 5,
     title: "Login",
-    url: "/",
+    href: "/",
   },
 ];
+
+export default dataLinks;
