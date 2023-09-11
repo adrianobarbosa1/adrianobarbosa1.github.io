@@ -13,8 +13,11 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div id="portfolio" className="items-center flex flex-col mt-10 ">
-      <h2 className="mt-10 text-3xl font-bold text-lightTextoTitulo dark:text-darkTextoTitulo">
+    <div
+      id="portfolio"
+      className="items-center flex flex-col mt-10 sm:mt-6 py-5"
+    >
+      <h2 className="section_title mt-20 dark:text-darkTextoTitulo">
         Portfolio
       </h2>
       {dataPortfolio.map((item, i) => (
@@ -37,7 +40,8 @@ const Portfolio = () => {
                 className="object-cover"
                 fill={true}
                 src="https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
-                alt=""
+                alt={item.altImage}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 
@@ -53,7 +57,7 @@ const Portfolio = () => {
                 <li>
                   <Link href={item.href}>
                     <button className="group relative border-2 border-primary h-10 w-48 overflow-hidden text-lg ">
-                      <div className="absolute inset-0 w-3 bg-primary transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                      <div className="absolute inset-0 w-3 bg-primary transition-all ease-out group-hover:w-full"></div>
                       <span className="relative text-black group-hover:text-white dark:text-darkTexto">
                         Veja mais
                       </span>
@@ -65,9 +69,10 @@ const Portfolio = () => {
                     href="https://github.com/adrianobarbosa1"
                     aria-label="github"
                     target="_blank"
+                    className="text-lightTextoTitulo dark:text-darkTexto"
                     rel="noreferrer"
                   >
-                    <FaGithub className="w-8 h-8  hover:text-primary hover:transition-all hover:duration-300" />
+                    <FaGithub className="w-8 h-8  hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
                   </Link>
                 </li>
               </ul>
