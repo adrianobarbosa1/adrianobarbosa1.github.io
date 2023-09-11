@@ -26,7 +26,7 @@ const Contato = () => {
   }, []);
 
   return (
-    <div
+    <section
       id="contact"
       className="items-center flex flex-col mt-10  max-w-6xl w-11/12 px-4"
     >
@@ -65,14 +65,14 @@ const Contato = () => {
         </div>
         <div className="flex center justify-center mt-10">
           <button className="group relative border-2 border-primary h-10 w-48 overflow-hidden text-lg ">
-            <div className="absolute inset-0 w-3 bg-primary transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+            <div className="absolute inset-0 w-3 bg-primary transition-all ease-out group-hover:w-full"></div>
             <span className="relative text-black group-hover:text-white dark:text-darkTexto">
               Enviar
             </span>
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 
