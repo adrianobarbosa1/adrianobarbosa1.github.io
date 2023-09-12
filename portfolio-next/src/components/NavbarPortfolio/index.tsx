@@ -37,7 +37,7 @@ const NavbarPortfolio = () => {
     <nav
       className={`fixed mx-auto top-0 left-0 right-0 z-10  ${
         scrolling
-          ? "bg-white dark:bg-slate-900 drop-shadow-md"
+          ? "bg-white dark:bg-[#242424] drop-shadow-md"
           : "bg-transparent"
       } transition-all duration-500`}
     >

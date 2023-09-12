@@ -17,7 +17,7 @@ const MenuOverlay = ({ dataLinks }: MenuOverlayProps) => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <ul className="flex flex-col py-4 items-center bg-white dark:bg-slate-900 z-10">
+    <ul className="flex flex-col py-4 items-center bg-white dark:bg-[#242424] z-10">
       {dataLinks.map((link, index) => (
         <li key={index}>
           <NavLink href={link.href} title={link.title} />

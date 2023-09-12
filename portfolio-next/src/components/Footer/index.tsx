@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Footer = () => (
-  <div className="bg-gray-100 dark:bg-gray-700 mt-20 w-full">
+  <div className="bg-gray-100 dark:bg-[#242424] mt-20 w-full">
     <footer className="items-center flex flex-col mt-10 mb-10 sm:mt-20">
       <div className=" my-1 pb-2 relative link_animation">
         <Link

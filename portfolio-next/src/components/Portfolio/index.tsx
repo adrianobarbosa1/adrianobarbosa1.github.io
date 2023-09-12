@@ -22,7 +22,7 @@ const Portfolio = () => {
         <div
           key={item.id}
           className={`w-full ${
-            i % 2 === 0 ? "" : "bg-gray-100 dark:bg-gray-700" // Aplica bg para indices pares
+            i % 2 === 0 ? "" : "bg-gray-100 dark:bg-[#242424]" // Aplica bg para indices pares
           }`}
         >
           <div
