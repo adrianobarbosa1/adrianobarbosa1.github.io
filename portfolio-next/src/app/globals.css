@@ -101,7 +101,7 @@ body {
   }
 
   .section_title {
-    @apply my-10  sm:text-3xl text-2xl font-bold text-lightTextoTitulo;
+    @apply my-10 mt-20 sm:text-3xl text-2xl font-bold text-lightTextoTitulo dark:text-darkTextoTitulo;
   }
 
   .custom-input {
