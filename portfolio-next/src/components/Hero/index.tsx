@@ -9,6 +9,7 @@ const Hero = () => {
           alt="Adriano Barbosa"
           className="rounded-full object-cover"
           quality={100}
+          priority={true}
           fill={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
