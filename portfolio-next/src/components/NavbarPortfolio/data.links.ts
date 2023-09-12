@@ -10,6 +10,11 @@ const dataLinks = [
     href: "/#about",
   },
   {
+    id: 7,
+    title: "Skills",
+    href: "/#skills",
+  },
+  {
     id: 6,
     title: "Portfólio",
     href: "/#portfolio",
