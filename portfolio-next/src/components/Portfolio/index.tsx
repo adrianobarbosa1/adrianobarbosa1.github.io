@@ -17,18 +17,16 @@ const Portfolio = () => {
       id="portfolio"
       className="items-center flex flex-col mt-10 sm:mt-6 py-5"
     >
-      <h2 className="section_title mt-20 dark:text-darkTextoTitulo">
-        Portfolio
-      </h2>
+      <h2 className="section_title ">Portfolio</h2>
       {dataPortfolio.map((item, i) => (
         <div
           key={item.id}
           className={`w-full ${
-            i % 2 === 0 ? "" : "bg-gray-100 dark:bg-gray-700" // Aplica flex-row-reverse para indices pares
+            i % 2 === 0 ? "" : "bg-gray-100 dark:bg-gray-700" // Aplica bg para indices pares
           }`}
         >
           <div
-            className={` flex flex-col mb-10 sm:mt-10 sm:flex-row sm:gap-12 sm:mb-16 w-4/5 mx-auto px-4 ${
+            className={`flex flex-col mb-10 sm:mt-10 sm:flex-row sm:gap-12 sm:mb-16 w-4/5 mx-auto px-4 ${
               i % 2 === 0 ? "" : "sm:flex-row-reverse " // Aplica flex-row-reverse para indices pares
             }`}
           >

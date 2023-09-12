@@ -1,19 +1,18 @@
-import { skills } from "./data.skills";
+import CardSkills from "./CardSkills";
+import { dataSkills } from "./dataSkills";
 
 const Habilidades = () => {
   return (
-    <section id="skills" className="items-center flex flex-col mt-10 py-5">
-      <h2 className="section_title dark:text-darkTextoTitulo">HABILIDADES</h2>
-      <ul className="max-w-md w-95 mx-auto flex flex-wrap justify-center">
-        {skills.map((skill, index) => (
-          <li
-            key={`${skill}${index}`}
-            className="m-2 btn btn--plain text-lightTexto hover:text-colorPrimary  dark:text-darkTexto"
-          >
-            {skill}
-          </li>
+    <section id="skills" className="items-center flex flex-col sm:mt-6 py-5">
+      <h2 className="section_title ">Skills</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 mt-10 mx-auto px-4">
+        {dataSkills.map((item, i) => (
+          <div className="mt-10 sm:mt-0 md:mt-10">
+            <CardSkills Icon={item.icon} title={item.title} desc={item.desc} />
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 };

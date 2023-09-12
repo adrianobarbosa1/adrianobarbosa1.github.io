@@ -6,11 +6,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="items-center flex flex-col sm:mt-6 py-5 max-w-6xl w-11/12 px-4"
+      className="items-center flex flex-col sm:mt-6 py-5 w-4/5 mx-auto px-4"
     >
-      <h2 className="section_title mt-20 dark:text-darkTextoTitulo">
-        Desenvolvedor Full Cycle.
-      </h2>
+      <h2 className="section_title">Desenvolvedor Full Cycle.</h2>
       <p className=" mb-6 dark:text-darkTexto">
         Como um desenvolvedor Full Cycle formado em Análise e Desenvolvimento de
         Sistemas, trago uma ampla experiência abrangendo todos os estágios do
