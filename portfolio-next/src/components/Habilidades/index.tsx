@@ -8,7 +8,7 @@ const Habilidades = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 mt-10 mx-auto px-4">
         {dataSkills.map((item, i) => (
-          <div className="mt-10 sm:mt-0 md:mt-10">
+          <div className="mt-10 sm:mt-0 md:mt-10" key={i}>
             <CardSkills Icon={item.icon} title={item.title} desc={item.desc} />
           </div>
         ))}
