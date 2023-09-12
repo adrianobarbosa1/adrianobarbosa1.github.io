@@ -18,32 +18,38 @@ const Portfolio = () => {
       className="items-center flex flex-col mt-10 sm:mt-6 py-5"
     >
       <h2 className="section_title ">Portfolio</h2>
+
       {dataPortfolio.map((item, i) => (
         <div
           key={item.id}
-          className={`w-full ${
+          className={` mb-10  ${
             i % 2 === 0 ? "" : "bg-gray-100 dark:bg-[#242424]" // Aplica bg para indices pares
           }`}
         >
           <div
-            className={`flex flex-col mb-10 sm:mt-10 sm:flex-row sm:gap-12 sm:mb-16 w-4/5 mx-auto px-4 ${
-              i % 2 === 0 ? "" : "sm:flex-row-reverse " // Aplica flex-row-reverse para indices pares
-            }`}
+            className={` grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 mx-auto px-4  items-center 
+         `}
           >
             <div
-              className=" mt-10 h-72 w-full sm:h-96 sm:w-96 sm:m-2 relative justify-content align-center"
+              className={`${
+                i % 2 === 0 ? "lg:order-1" : "lg:order-2"
+              } flex justify-center items-center`}
               data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`} // Aplica fade-left para indices pares
             >
               <Image
-                className="object-cover"
-                fill={true}
                 src="https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
                 alt={item.altImage}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-contain max-w-full h-auto w-auto"
+                width={600}
+                height={600}
               />
             </div>
 
-            <div className=" mt-10  flex-1 flex flex-col gap-5 justify-center">
+            <div
+              className={`${
+                i % 2 === 0 ? "lg:order-2" : "lg:order-1"
+              }   flex-1 flex flex-col gap-5 justify-center`}
+            >
               <h1 className="text-primary dark:text-primary leading-6 font-bold  text-3xl sm:text-5xl text-center">
                 {item.title}
               </h1>

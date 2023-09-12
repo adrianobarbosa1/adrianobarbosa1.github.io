@@ -33,8 +33,8 @@ const Contato = () => {
       <h2 className="section_title">Contato</h2>
 
       <form className=" ">
-        <div className="flex flex-col mt-10 sm:flex-row w-full">
-          <div className="sm:w-1/2 sm:mx-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
+          <div>
             <input
               type="text"
               placeholder="nome"
@@ -54,7 +54,7 @@ const Contato = () => {
               className="custom-input mt-3 w-full"
             />
           </div>
-          <div className=" sm:w-1/2 sm:mx-5 ">
+          <div>
             <textarea
               placeholder="mensagem..."
               className="custom-input mt-3 sm:mt-0 w-full sm:h-full"
