@@ -35,7 +35,7 @@ const NavbarPortfolio = () => {
 
   return (
     <nav
-      className={`fixed mx-auto top-0 left-0 right-0 z-10  ${
+      className={` fixed mx-auto top-0 w-screen z-10  ${
         scrolling
           ? "bg-white dark:bg-[#242424] drop-shadow-md"
           : "bg-transparent"
