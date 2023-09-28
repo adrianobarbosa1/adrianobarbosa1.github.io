@@ -15,7 +15,7 @@ const Portfolio = () => {
   return (
     <div
       id="portfolio"
-      className="items-center flex flex-col mt-10 sm:mt-6 py-5"
+      className=" items-center flex flex-col mt-10 sm:mt-6 py-5"
     >
       <h2 className="section_title ">Portfolio</h2>
 
@@ -31,18 +31,24 @@ const Portfolio = () => {
          `}
           >
             <div
-              className={`${
+              className={` ${
                 i % 2 === 0 ? "lg:order-1" : "lg:order-2"
               } flex justify-center items-center`}
               data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`} // Aplica fade-left para indices pares
             >
-              <Image
-                src="https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
-                alt={item.altImage}
-                className="object-contain max-w-full h-auto w-auto"
-                width={600}
-                height={600}
-              />
+              <a
+                href={item.href}
+                target="_blank"
+                className="cursor-pointer transition duration-300 hover:scale-110 transform-gpu"
+              >
+                <Image
+                  src={item.href}
+                  alt={item.altImage}
+                  className="object-contain max-w-full h-auto w-auto"
+                  width={600}
+                  height={600}
+                />
+              </a>
             </div>
 
             <div
