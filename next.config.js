@@ -10,9 +10,9 @@ const nextConfig = {
           },
           {
             protocol: 'https',
-            hostname: 'drive.google.com',
+            hostname: 'data.terabox.com',
             port: '',
-            pathname: '/file/**',
+            pathname: '/thumbnail/**',
           },
         ],
       },
