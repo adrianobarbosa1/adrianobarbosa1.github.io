@@ -17,7 +17,7 @@ const Portfolio = () => {
       id="portfolio"
       className=" mt-10 flex flex-col items-center py-5 sm:mt-6"
     >
-      <h2 className="section_title " data-aos="fade-up" data-aos-delay="300">
+      <h2 className="section_title " data-aos="fade-up" data-aos-delay="400">
         Portfolio
       </h2>
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
                 i % 2 === 0 ? "lg:order-1" : "lg:order-2"
               } flex items-center justify-center`}
               data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`} // Aplica fade-left para indices pares
-              data-aos-delay="400"
+              data-aos-delay="500"
             >
               <a
                 href={item.href}
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 i % 2 === 0 ? "lg:order-2" : "lg:order-1"
               }   flex flex-1 flex-col justify-center gap-5`}
               data-aos="fade-up"
-              data-aos-offset="350"
+              data-aos-offset="450"
             >
               <h1 className="text-center text-3xl font-bold leading-6  text-primary dark:text-primary sm:text-5xl">
                 {item.title}
