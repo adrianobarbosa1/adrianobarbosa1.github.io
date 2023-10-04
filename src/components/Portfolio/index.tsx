@@ -48,6 +48,8 @@ const Portfolio = () => {
                   src={item.href}
                   alt={item.altImage}
                   className="h-auto w-auto max-w-full object-contain"
+                  quality={100}
+                  priority={true}
                   width={600}
                   height={600}
                 />
