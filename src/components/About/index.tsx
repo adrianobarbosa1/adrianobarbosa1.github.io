@@ -6,10 +6,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="items-center flex flex-col sm:mt-6 py-5 w-4/5 mx-auto px-4"
+      className="mx-auto flex w-4/5 flex-col items-center px-4 py-5 sm:mt-6"
     >
       <h2 className="section_title">Desenvolvedor Full Cycle.</h2>
-      <p className=" mb-6 dark:text-darkTexto">
+      <p
+        className=" mb-6 dark:text-darkTexto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         Como um desenvolvedor Full Cycle formado em Análise e Desenvolvimento de
         Sistemas, trago uma ampla experiência abrangendo todos os estágios do
         ciclo de desenvolvimento de software, desde a concepção até a
@@ -17,7 +21,11 @@ const About = () => {
         capacitam-me a criar aplicativos de alta qualidade e escaláveis que
         atendem às demandas diversas de várias empresas.
       </p>
-      <p className="mb-6 dark:text-darkTexto">
+      <p
+        className="mb-6 dark:text-darkTexto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         Minha paixão pela programação nasceu em 2016 e, desde então, tenho me
         dedicado a aprimorar minhas competências e conhecimentos por meio de
         projetos variados, como o desenvolvimento de websites, aplicativos e
@@ -28,7 +36,11 @@ const About = () => {
         MongoDB, SQL e PostgreSQL no backend, e Next.js, React, além de diversos
         frameworks CSS no frontend.
       </p>
-      <p className="mb-6 dark:text-darkTexto">
+      <p
+        className="mb-6 dark:text-darkTexto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         Mantenho-me sempre atualizado e continuo a aprender constantemente,
         acreditando que esse é o cerne do sucesso. Tenho convicção de que
         comprometimento e dedicação são essenciais para fornecer soluções
@@ -40,9 +52,9 @@ const About = () => {
         alcançar os objetivos empresariais.
       </p>
 
-      <div>
+      <div data-aos="zoom-in" data-aos-delay="400">
         <ul className="about__contact center flex space-x-6">
-          <li className=" my-1 pb-2 relative link_animation">
+          <li className=" link_animation relative my-1 pb-2">
             <Link
               href="https://github.com/adrianobarbosa1"
               aria-label="github"
@@ -50,10 +62,10 @@ const About = () => {
               className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaGithub className="w-8 h-8  hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
+              <FaGithub className="h-8 w-8  hover:text-primary hover:transition-all hover:duration-300 hover:dark:text-darkTexto" />
             </Link>
           </li>
-          <li className=" my-1 pb-2 relative link_animation">
+          <li className=" link_animation relative my-1 pb-2">
             <Link
               href="https://www.linkedin.com/in/adrianobarbosa-dev/"
               aria-label="linkedin"
@@ -61,7 +73,7 @@ const About = () => {
               className="text-lightTextoTitulo dark:text-darkTexto"
               rel="noreferrer"
             >
-              <FaLinkedin className="w-8 h-8  hover:text-primary hover:dark:text-darkTexto hover:transition-all hover:duration-300" />
+              <FaLinkedin className="h-8 w-8  hover:text-primary hover:transition-all hover:duration-300 hover:dark:text-darkTexto" />
             </Link>
           </li>
         </ul>

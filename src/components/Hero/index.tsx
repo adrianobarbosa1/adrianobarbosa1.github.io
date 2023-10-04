@@ -2,8 +2,16 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="items-center flex flex-col mt-20">
-      <div className="h-64 w-64 relative mt-10 border-2 border-primary dark:border-primary rounded-full">
+    <section
+      className=" mt-20 flex flex-col items-center"
+      data-aos="fade-up"
+      data-aos-offset="350"
+    >
+      <div
+        className="relative mt-10 h-64 w-64 rounded-full border-2 border-primary dark:border-primary"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
         <Image
           src="/adriano.png"
           alt="Adriano Barbosa"
@@ -15,7 +23,7 @@ const Hero = () => {
         />
       </div>
 
-      <h1 className=" text-primary dark:text-primary leading-6 font-bold mt-10 text-4xl sm:text-6xl">
+      <h1 className=" mt-10 text-4xl font-bold leading-6 text-primary dark:text-primary sm:text-6xl">
         Adriano Barbosa.
       </h1>
     </section>
