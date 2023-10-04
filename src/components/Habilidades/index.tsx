@@ -11,7 +11,12 @@ const Habilidades = () => {
       <div className="mx-auto grid w-4/5 grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:grid-cols-4">
         {dataSkills.map((item, i) => (
           <div className="mt-10 sm:mt-0 md:mt-10" key={i}>
-            <CardSkills Icon={item.icon} title={item.title} desc={item.desc} />
+            <CardSkills
+              Icon={item.icon}
+              title={item.title}
+              desc={item.desc}
+              index={i}
+            />
           </div>
         ))}
       </div>
