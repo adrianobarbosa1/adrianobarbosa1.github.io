@@ -24,7 +24,7 @@ const Portfolio = () => {
       {dataPortfolio.map((item, i) => (
         <div
           key={item.id}
-          className={` mb-10  ${
+          className={` mb-10 py-10  ${
             i % 2 === 0 ? "" : "bg-gray-100 dark:bg-[#242424]" // Aplica bg para indices pares
           }`}
         >
@@ -72,7 +72,7 @@ const Portfolio = () => {
 
               <ul className="about__contact center flex justify-center space-x-6">
                 <li>
-                  <Link href={item.href}>
+                  <Link href={item.linkUrl} target="_blank">
                     <button className="group relative h-10 w-48 overflow-hidden border-2 border-primary text-lg ">
                       <div className="absolute inset-0 w-3 bg-primary transition-all ease-out group-hover:w-full"></div>
                       <span className="relative text-black group-hover:text-white dark:text-darkTexto">
