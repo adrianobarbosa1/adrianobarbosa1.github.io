@@ -24,19 +24,24 @@ const dataLinks = [
     title: "Contato",
     href: "/#contact",
   },
+  // {
+  //   id: 4,
+  //   title: "Whatsapp",
+  //   href: "https://api.whatsapp.com/send/?phone=62993680832&text&type=phone_number&app_absent=0",
+  // },
   {
     id: 4,
-    title: "Whatsapp",
-    href: "https://api.whatsapp.com/send/?phone=62993680832&text&type=phone_number&app_absent=0",
-  },
-  {
-    id: 5,
     title: "Blog",
     href: "/blog",
   },
   {
-    id: 6,
+    id: 5,
     title: "Login",
+    href: "/dashboard/login",
+  },
+  {
+    id: 6,
+    title: "Sign Up",
     href: "/dashboard/login",
   },
 ];
