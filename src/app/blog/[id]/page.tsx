@@ -1,3 +1,5 @@
+import MenuCategories from "@/components/MenuCategories";
+
 const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "default",
@@ -20,15 +22,19 @@ const page = async () => {
   };
 
   return (
-    <div className="w-full bg-[#f9f9f9] pb-10">
+    <div className="mt-20 w-full bg-[#f9f9f9] py-[50px]">
       <div className="mx-auto max-w-[1240px]">
-        <div className="ss:grid-cols-1 ss:pt-20 grid gap-8 gap-x-8 gap-y-8 px-4 text-black sm:grid-cols-3 sm:pt-20 md:mt-0 md:grid-cols-3 lg:grid-cols-3">
-          <div className="col-span-2 gap-x-8 gap-y-8">
+        <div className="grid grid-cols-1 gap-10 px-4 text-black sm:grid-cols-12">
+          <div className="sm:col-span-8">
             <img className="h-56 w-full object-cover" src={post.coverImg} />
             <h1 className="my-1 pt-5 text-2xl font-bold">{post.title}</h1>
             <div className="pt-5">
               <p className="">{post.desc}</p>
             </div>
+          </div>
+
+          <div className="sm:col-span-4">
+            <MenuCategories />
           </div>
         </div>
       </div>

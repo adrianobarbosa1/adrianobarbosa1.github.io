@@ -1,6 +1,6 @@
 import AutorComponent from "./AutorComponent";
 
-const CardBlog = ({ post }) => {
+const CardPost = ({ post }) => {
   return (
     <div
       key={post.id}
@@ -35,4 +35,4 @@ const CardBlog = ({ post }) => {
   );
 };
 
-export default CardBlog;
+export default CardPost;
