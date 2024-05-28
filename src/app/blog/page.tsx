@@ -2,7 +2,7 @@ import CardPost from "@/components/CardPost";
 import MenuCategories from "@/components/MenuCategories";
 import Pagination from "@/components/Pagintaion";
 
-const getData = async (page) => {
+const getData = async (page: number) => {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts?page=${page}`,
     {
