@@ -17,7 +17,7 @@ const getData = async (page: number) => {
   return res.json();
 };
 
-const page = async ({ searchParams }) => {
+const page = async ({ searchParams }: any) => {
   const page = parseInt(searchParams) || 1;
   const data = await getData(page);
 
